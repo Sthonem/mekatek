@@ -1,0 +1,92 @@
+git
+
+git = versiyon kontrol sistemi
+gthub = portal 
+
+linux terminal ile aynı mantık ->
+
+ls = list
+pwd = canlı konum
+cd = konuma git
+clear = temizleme
+cd .. = önceki klasöre geri git 
+mkdir = klasör oluştur 
+tocuh = dosya oluştur
+rm = dosya sil
+rm -rf = klasör sil
+git = yardım dökümasyonu
+
+
+git config --gobal user.name "Erdem Aslan"
+          x  = kullanıcı adı ve e-mail kaydetme
+git config --gobal user.email erdemaslan1003@gmail.com
+
+git config user.name 
+          x = isim ve email görme 
+git config user.email 
+
+
+git status = güncel git durumunu gösterir
+
+git init = giti klasörde aktif etmek için kullanılır
+
+* 2 kere init yapma reyizin kafası karışıyomuş
+
+rm -rf .git
+
+-m = // gibi yorum veya mesaj satırı "," li
+
+git commit = commit oluşturur.
+
+git log = commitleri gösterir
+
+git add . = hepsini ekler 
+
+git commit -m = commiti metin ile ekler 
+(tekrar git add yapmana gerek kalmaz)
+
+touch .gitignore =
+bunun içine istediğin dosyanın ismini yaz dosya başkaları tarafından okunamaz hale gelir.
+
+git branch = branchleri gösterir
+
+git branch feature = 2.branch açar
+
+git switch feature = feature a geç
+
+git switch master = master a geç
+
+git merge feature = feature ı master ile birleştirir.
+
+git restore x = x in en son halini kapar ( modifiyeli)
+
+git stash = ödünç verme 
+git stash pop = geri alma 
+
+git stash list = stash list 
+
+git stash aplly stashismi = çoklu geri alma 
+
+git checkout x(hashid) = önceki commite geri dön
+
+git reset x(hashid) =  önceki committen devam et
+
+git reset --hard x(hashid) = commit loga kadar siler 
+
+git revert x(hashid) =  aradan 1 tane commit silme (logtan gitmez)
+
+git diff = add yapmadan önce kullanılır commit farklarını gösterir.
+
+git diff x(hashid).. x(hashid) = diff
+ 
+             git rebase master 
+                      = 
+master ı feat ile merge eder ama  merge commitleri siler 
+
+
+
+
+
+
+
+git hub
