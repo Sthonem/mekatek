@@ -1,0 +1,532 @@
+type () = tür gösterir
+
+# yorum satırı
+
+import keyword
+keyword.kwlist 
+=komutları gösterir
+
+---
+print ('b','t','k'sep',')
+
+sepli = b t k - sepsiz b,t,k
+
+= boşluk dolduruyor
+---
+
+print ("yaşınız", end(''))
+ = aynı satıra yazar
+
+print("btk\nAkademi")
+->btk
+  Akademi
+
+print("btk\tAkademi")
+->btk   Akademi
+
+= araya 1 tab boşluk bırakır
+
+print("\\")
+->\
+
+4.4 format
+
+if (...) : şeklinde kullan
+ 
+else 
+
+liste=[a,b,c] = liste tanımı
+if isim in liste:
+if isim not in liste:
+
+for A in range (1,11,2):
+
+1 den 11 e kadar 2 artarak ilerle
+
+continue = şartı sağlıyorsa o şartı saymadan devam et
+
+if(d==4):
+continue
+print(d)
+
+d, 4'e eşitse 4'ü printleme sonrakine geç
+
+while True: = doğru olana kadar
+
+def topla (): = fonksiyon tanımlama
+------
+
+def selam(isim):
+    print("Sayın",isim,"Restoranımıza hoşgeldiniz")
+    
+Ad=input("isminiz nedir?")
+selam(Ad)
+
+-> Sayın aga restoranımıza hoşgeldiniz.
+----
+def alan(u,g):
+    A=u*g
+    return A
+    
+def cevre(u,g):
+    C=2*(u+g)
+    return C
+
+u=int(input("dikdörtgenin uzun kenarını gir")) 
+g=int(input("dikdörgenin kısa kenarını gir"))
+print("dikdörtgenin alan=",alan(u,g))
+print("dikdörgenin çevresi",cevre(u,g))
+------
+def topla():
+    global a
+    global b
+    a=5
+    b=6
+    return(a+b)
+
+print(topla()) 
+print(a)
+print(b)
+-----
+def topla():
+    global a
+    global b
+    a=5
+    b=6
+    return(a+b)
+
+def cikarma():
+    pass ya da returun
+
+print(topla()) 
+print(cikmara)
+-----
+== fonksiyonun içi boş. Hata vermesin diye pass yazdık sen bunu şimdilik bunu geç aga
+
+== ya da sadece return yazabiliriz
+-----
+def dolar(TL):
+    return(TL/18)
+
+dolar=lambda TL: TL/18
+----
+bu ikisi aynı fonksiyon lambda ile kısa yoldan fonksiyon tanımlayabiliriz.
+
+----
+def ustel(a,b):
+    if b==0:
+        return 1
+    else:
+        return a*ustel(a,b-1) 
+
+a=int(input("tabanı giriniz"))
+b=int(input("üssü giriniz"))
+print(ustel(a,b))
+----
+özyinelemeli fonksiyon örneği
+=
+fonksiyonu tekrar tekrar çağırmak
+
+-----
+Ad="BTK AKADEMİ"
+Ad[7] soldan başlar
+Ad[-7] sağdan başlar
+
+= 7. indis i verir 
+yani 'D'  yazar
+
+
+indis birleştirme
+
+a="az"
+b=" "
+c="yemek"
+d=a+b+c
+print(c)
+BTK AKADEMİ
+
+
+----
+
+string bölme
+
+S="PYTHON"
+S[1:6:3]
+='YO'
+
+S[:3]
+='PYT'
+
+S[::-1]
+='NOHTYP'
+
+S2=S[:3]+'T'+S[4:]
+=PYTTON
+
+----
+Adres='Sultangazi-İstanbul'
+Adres=Adres.replace("Sultangazi","Kadıköy")
+
+= Kadıköy-İstanbul
+
+-----
+yazi="Python"
+for x in range(1,6):
+print(yazi[:-x])
+-----
+a=""
+s=0
+indis=int(input("indis değeri girin"))
+for d in "btkakademi":
+    if s==indis:
+        a=d
+    s+=1
+print(a) 
+
+for döngüsü ile erişim
+
+----
+stringi listeye dönüştürme
+
+adres="Bagcilar fatihmah deryasok no29 kat2"
+adres.split(' ')
+print(adres.split(' '))
+
+=> ['Bagcilar', 'fatihmah', 'deryasok', 'no29', 'kat2']
+----
+stringAdı[ilk indis : son indis : adım miktarı]
+----
+STR=BTK
+'K'.join(reversed(STR))
+=KKTKB
+
+araya K koyar
+
+STR.upper()=STR
+STR.lower()=str
+STR.swapcase()=str
+STR.capitalize()=Str
+
+-----
+kelime=input("kelie giriniz..")
+print(kelime,"nin tersi",kelime[::-1],"dir")
+if kelime==kelime[::-1]:
+    print(kelime,"bir palindomdur")
+else:
+    print(kelime,"palindom değildir")
+
+palindom kelime bulan algoritma örneği
+-----
+Liste Oluşturma
+
+liste=["ali",5,"g","*"]
+
+İndis Sırası Bulma
+
+liste=[1,2,3,'a','2','ali']
+liste.index(2)
+=1
+
+Eleman Ekleme
+
+L=[1,2,3,4,5]
+L.append(7)
+
+
+L.instert[1,9]
+
+print(L)
+=[1,9,2,3,4,5,7]
+
+L1 ve L2 birleştirme
+
+L1.extend (L2)
+
+Listeye ters çevirme
+
+L1.reverse()
+
+Min ve Max eleman görme
+
+min(L1)
+
+max(L1)
+--
+aritmetik ortalama programı yeni nesil
+
+L=[]
+Topla=0
+for i in range (0,5):
+    sayi=int(input('sayı gir.:'))
+    L.append(sayi)
+    Topla+=sayi
+print('en küçük ve en büyük sayilar toplami=',max(L)+min(L) )
+print("aritmetik ortalama=",Topla/len(L))
+--
+str yi liste yapma
+
+kelime="BTK"
+L=[]
+L=list(kelime)
+print(L)
+=>B,T,K
+
+-- 
+listeden eleman kaldırma
+
+L.remove("A") listedeki A ları siler
+
+L.pop[2] = 2.indisi silip yazar
+
+L.clear()= Listenin tamamnını siler
+--
+L.sort()
+
+listenin elemanları sıralama
+--
+listeyi numaralandırma
+
+gun=["pazartesi","salı","çarşamba"]
+for i, deger in enumerate (gun):
+    print(str(i+1)+".gün "+deger)
+
+1.gün pazartesi
+2.gün salı
+3.gün çarşamba
+---
+L=[]
+while True:
+    TC=int(input("TC gir.."))
+    if TC in L:
+        i=L.index(TC)
+        print("Muayene sirasi..:",i+1)
+    elif TC==0:
+        print(L[0])
+        L.pop(0)
+    else:
+        L.append (TC)
+
+muayene sırası uygulaması.
+---
+Sözlük oluşturma
+
+S={}
+
+sözlük tanımlama
+
+TC=dict([("talat",1234),("ali",1235),("hasan",1236)])
+
+S={"talat":1234,"ali":1235,"hasan":1236}
+
+S.get("talat","yok")
+1234
+
+S.get("Ali","yok")
+"yok"
+
+S.pop("talat")
+silme
+
+S.keys() = anahtaları verir.
+
+S.values() = değerleri verir.
+
+S.items() = ([( 'li şekilde elemanları verir
+
+-----
+gun=input("Türkçe gün adı..:")
+TrEn={"pazartesi":"monday","salı":"tuesday","carsamba":"wednesday"}
+print("ingilizcesi..:",end="")
+print (TrEn.get(gun,"bu kelime sözlükte yok"))
+
+günlerin ingilizcesini veren program
+
+-----
+
+küme tanımlama
+
+K ={'f', 'j', '1', 'd', 'h', '8', 's', '2', 'a'}
+
+ya da 
+
+K=set("asdh812jf")
+K ={'f', 'j', '1', 'd', 'h', '8', 's', '2', 'a'}
+
+k1|k2 = iki kümeyi birleştirme
+k1%k2 = iki kümenin kesişimi
+k1-k2 = iki kümenin farkı(k1 de var k2 de yok)
+
+
+
+---
+touple list farkı 
+
+
+T=(1,"al","*") = 1 kere tanımlanı daha değiştirilemez daha az yer kaplar touple
+K=[1,"al","*"] = değiştirilebilir daha çok yer kaplar list
+
+----
+
+class Araba(marka)
+
+model=marka
+
+def metot(self):
+      self.marka="mercedes"
+
+sınıf tanım örneği
+-----
+
+class araba:
+    pass 
+
+pass = bırakıp sonra devam edek diye 
+class hayvan(cins):
+     tur=cins
+     def metot(self):
+         self.cins="balıklar"
+
+class'ın altına tanımlanan fonksiyonlara metot denir.
+
+nesneyi doğrudan göstermek için 
+self
+---
+Nesne tanımlamak için 
+
+class hayvan():
+    pass 
+class Araba():
+     pass
+At=hayvan()
+horoz=hayvan()
+
+Taksi=Araba()
+kamyon=Araba()
+---
+
+nesenlerin ve fonksiyonların sahip olduğu özellikleri öğrenmek için
+dir kullanılır
+
+dir(Taksi)
+
+----
+class Araba():
+    def __init__ (self,model,marka,renk): #metot
+        self.model=model
+        self.marka=marka
+        self.renk=renk
+        #metot
+class kamyon(Araba):
+    pass
+
+class içinde class tanımladık kamyon arabanın alt classı 
+
+Modül kavramı
+
+import math
+import random 
+from module import x
+
+import Module as mdl = kısaltma yöntemi
+
+import math, random
+print(math.sqrt(100))
+
+yerine 
+
+from math import sqrt
+print(sqrt(100))
+ 
+yazarsak daha verimli oluruz.
+
+ veya
+
+import math, as m
+print(m.sqrt(100))
+
+yazabiliriz
+----
+print("pyhton")
+print("meraba")
+print(__name__=="__main__")
+
+pyhton
+meraba
+True
+  
+#ana program mı değil mi öğrenmek için kullanırız.True ise ana  False ise yan program 
+
+--- matematiksel işlemler
+abs() = mutlak değer
+
+round()= en yakın tam sayıya yuvarlar
+
+max()
+min()
+
+pow = üs alma
+
+bin() = ikilik sayı sistemine dönüştürür
+
+hex() = 16 lık sayı sistemine dönüştürür
+
+chra() = ascıı ye dönüştürür
+
+---
+
+import random
+
+import random kullanmak zorundayız bu kodlar için
+
+random.Random()
+
+1 ile 0 arasında virgüllü sayı üretir.
+
+
+random.randint(2,9)
+
+2,9 arasında tam sayı üretir.
+
+
+random.randange(1,13,2)
+
+1 ile 13 arasında 2 şerli değer üretme
+
+
+random.unifrom(10.11)
+
+10 ile 11 arasında sayı üretir
+---
+
+liseteden random eleman seçme
+
+random.choice(Liste)
+
+
+listeyi random sıralama
+
+random.suffle(Liste)
+
+listeden bi sayıda rastgele eleman getirme
+
+random.sample(Liste,2) 
+= 2 eleman
+
+---
+çizim için
+
+import turtle
+
+
+turtle.position()
+turtle.pos() = konum
+turtle.goto(100,100) = git
+turtle.setposition(-50,-50) = git
+turtle.setpos(0,0)=git
+turtle.reset() = sıfırlama
+turtle.home() = sıfırlama
+turtle.setx(100) sadece x
+turtle.sety(100) sadece y
+
+doğru çizimi ve doğrusal hareket
+---
