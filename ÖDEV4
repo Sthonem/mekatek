@@ -1,0 +1,165 @@
+#SORU1:
+
+def arayici(dizi, hedef):
+
+    sozluk = {}  
+
+    for i, sayi in enumerate(dizi):
+        tamamlayici = hedef - sayi  
+        if tamamlayici in sozluk:  
+            return [sozluk[tamamlayici], i]  
+        sozluk[sayi] = i  
+    return []
+
+dizi=[]
+i=0
+
+hedef=int(input("ulaşmak istediğiniz sayi kaç ?"))
+elemansayisi=int(input("kaç eleman eklemek istersiniz ?"))
+
+while(i<elemansayisi):
+    eleman=int(input("eleman giriniz."))
+    dizi.append(eleman)
+    i+=1
+
+
+print(arayici(dizi,hedef))
+
+
+#----------------------------------------------------------------------------
+
+
+#SORU2:
+
+def rotaer(dizi):
+    dizi.sort()
+    sonuc = []
+    uzunluk = len(dizi)
+
+    for i in range(uzunluk - 2):
+
+        if i > 0 and dizi[i] == dizi[i - 1]:
+            continue
+
+        sol = i + 1
+        sag = uzunluk - 1
+
+        while sol < sag:
+            total = dizi[i] + dizi[sol] + dizi[sag]
+
+            if total < 0:
+                sol += 1
+            elif total > 0:
+                sag -= 1
+            else:
+                sonuc.append([dizi[i], dizi[sol], dizi[sag]])
+
+                # Aynı sayıları atlamak için kontrol
+                while sol < sag and dizi[sol] == dizi[sol + 1]:
+                    sol += 1
+                while sol < sag and dizi[sag] == dizi[sag - 1]:
+                    sag -= 1
+
+                sol += 1
+                sag -= 1
+
+    return sonuc
+dizi=[]
+i=0
+elemansayisi = int(input("kaç 3'lü eklemek istersiniz ?"))
+
+while (i < elemansayisi * 3):
+    eleman = int(input("eleman giriniz."))
+    dizi.append(eleman)
+    i += 1
+    print(dizi)
+
+print(rotaer(dizi))
+
+
+
+
+
+#----------------------------------------------------------------------------
+
+
+
+
+
+#SORU3:
+
+def ceviri(metin):
+    sozluk = {
+        'a': 2, 'b': [2, 2], 'c': [2, 2, 2],
+        'd': 3, 'e': [3, 3], 'f': [3, 3, 3],
+        'g': 4, 'h': [4, 4], 'i': [4, 4, 4],
+        'j': 5, 'k': [5, 5], 'l': [5, 5, 5],
+        'm': 6, 'n': [6, 6], 'o': [6, 6, 6],
+        'p': 7, 'q': [7, 7], 'r': [7, 7, 7], 's': [7, 7, 7, 7],
+        't': 8, 'u': [8, 8], 'v': [8, 8, 8],
+        'w': 9, 'x': [9, 9], 'y': [9, 9, 9], 'z': [9, 9, 9, 9],
+        ' ': 0
+    }
+
+    result = []
+
+    for harf in metin:
+        if (harf in sozluk):
+            if (not result or isinstance(result[-1], int) or result[-1] != sozluk[harf]):
+                result.append(sozluk[harf])
+            else:
+                result.append([sozluk[harf]] * len([harf for harf in metin if harf == harf.lower()]))
+
+    return result
+
+kelime = input("kelime yazin:")
+print("Input:", kelime)
+print("Output:", ceviri(kelime))
+
+#----------------------------------------------------------------------------
+
+#SORU4:
+
+def KelimeBulucu(tablo, kelimeler):
+    def tekrarlayici(i, j, deneyici):
+        harf = tablo[i][j]
+        mevcutdugum = deneyici[harf]
+
+        if "kelime" in mevcutdugum:
+            sonuc.add(mevcutdugum["kelime"])
+
+        tablo[i][j] = "#"
+
+        for ni, nj in [(i+1, j), (i-1, j), (i, j+1), (i, j-1)]:
+            if 0 <= ni < len(tablo) and 0 <= nj < len(tablo[0]) and tablo[ni][nj] in mevcutdugum:
+                tekrarlayici(ni, nj, mevcutdugum)
+
+        tablo[i][j] = harf
+
+    yedek = {}
+    for kelime in kelimeler:
+        dugum = yedek
+        for letter in kelime:
+            if letter not in dugum:
+                dugum[letter] = {}
+            dugum = dugum[letter]
+        dugum["kelime"] = kelime
+
+    sonuc = set()
+    for i in range(len(tablo)):
+        for j in range(len(tablo[0])):
+            if tablo[i][j] in yedek:
+                tekrarlayici(i, j, yedek)
+
+    return list(sonuc)  
+
+
+tablo = [
+    ['a', 'z', 'e', 'n'],
+    ['e', 'a', 'l', 'i'],
+    ['i', 'd', 'e', 'r'],
+    ['i', 'f', 'm', 't']
+]
+kelimeler = ["azad", "ali", "nil", "mert"]
+
+print(KelimeBulucu(tablo, kelimeler))
