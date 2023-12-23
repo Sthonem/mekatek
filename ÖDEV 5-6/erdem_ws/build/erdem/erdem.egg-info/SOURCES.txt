@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/erdem/erdem.egg-info/PKG-INFO
+../../build/erdem/erdem.egg-info/SOURCES.txt
+../../build/erdem/erdem.egg-info/dependency_links.txt
+../../build/erdem/erdem.egg-info/entry_points.txt
+../../build/erdem/erdem.egg-info/requires.txt
+../../build/erdem/erdem.egg-info/top_level.txt
+../../build/erdem/erdem.egg-info/zip-safe
+erdem/__init__.py
+erdem/publisher_node.py
+erdem/subscriber_node.py
+resource/erdem
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
