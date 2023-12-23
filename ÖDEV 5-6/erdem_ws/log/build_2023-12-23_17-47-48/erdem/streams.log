@@ -1,0 +1,22 @@
+[0.734s] Invoking command in '/home/sthonem/erdem_ws/src/erdem': PYTHONPATH=/home/sthonem/erdem_ws/build/erdem/prefix_override:/home/sthonem/erdem_ws/install/erdem/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/erdem build --build-base /home/sthonem/erdem_ws/build/erdem/build install --record /home/sthonem/erdem_ws/build/erdem/install.log --install-scripts $base/lib/erdem --single-version-externally-managed
+[0.880s] running egg_info
+[0.880s] writing ../../build/erdem/erdem.egg-info/PKG-INFO
+[0.881s] writing dependency_links to ../../build/erdem/erdem.egg-info/dependency_links.txt
+[0.881s] writing entry points to ../../build/erdem/erdem.egg-info/entry_points.txt
+[0.881s] writing requirements to ../../build/erdem/erdem.egg-info/requires.txt
+[0.881s] writing top-level names to ../../build/erdem/erdem.egg-info/top_level.txt
+[0.904s] reading manifest file '../../build/erdem/erdem.egg-info/SOURCES.txt'
+[0.905s] writing manifest file '../../build/erdem/erdem.egg-info/SOURCES.txt'
+[0.905s] running build
+[0.905s] running build_py
+[0.905s] running install
+[0.906s] running install_lib
+[0.907s] running install_data
+[0.907s] running install_egg_info
+[0.908s] removing '/home/sthonem/erdem_ws/install/erdem/lib/python3.8/site-packages/erdem-0.0.0-py3.8.egg-info' (and everything under it)
+[0.908s] Copying ../../build/erdem/erdem.egg-info to /home/sthonem/erdem_ws/install/erdem/lib/python3.8/site-packages/erdem-0.0.0-py3.8.egg-info
+[0.909s] running install_scripts
+[0.920s] Installing publisher_node script to /home/sthonem/erdem_ws/install/erdem/lib/erdem
+[0.920s] Installing subscriber_node script to /home/sthonem/erdem_ws/install/erdem/lib/erdem
+[0.920s] writing list of installed files to '/home/sthonem/erdem_ws/build/erdem/install.log'
+[0.932s] Invoked command in '/home/sthonem/erdem_ws/src/erdem' returned '0': PYTHONPATH=/home/sthonem/erdem_ws/build/erdem/prefix_override:/home/sthonem/erdem_ws/install/erdem/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/erdem build --build-base /home/sthonem/erdem_ws/build/erdem/build install --record /home/sthonem/erdem_ws/build/erdem/install.log --install-scripts $base/lib/erdem --single-version-externally-managed
