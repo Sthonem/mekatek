@@ -1,0 +1,54 @@
+[0.000000] (-) TimerEvent: {}
+[0.000085] (erdem) JobQueued: {'identifier': 'erdem', 'dependencies': OrderedDict()}
+[0.000135] (erdem) JobStarted: {'identifier': 'erdem'}
+[0.099816] (-) TimerEvent: {}
+[0.200102] (-) TimerEvent: {}
+[0.300428] (-) TimerEvent: {}
+[0.400885] (-) TimerEvent: {}
+[0.501163] (-) TimerEvent: {}
+[0.601480] (-) TimerEvent: {}
+[0.701734] (-) TimerEvent: {}
+[0.739320] (erdem) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/erdem', 'build', '--build-base', '/home/sthonem/erdem_ws/src/build/erdem/build', 'install', '--record', '/home/sthonem/erdem_ws/src/build/erdem/install.log', '--install-scripts', '$base/lib/erdem', '--single-version-externally-managed'], 'cwd': '/home/sthonem/erdem_ws/src/erdem', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sthonem', 'LC_TIME': 'tr_TR.UTF-8', 'SSH_AGENT_PID': '1831', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/sthonem', 'OLDPWD': '/home/sthonem/erdem_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'tr_TR.UTF-8', 'MANAGERPID': '1584', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/foxy/', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'sthonem', 'JOURNAL_STREAM': '8:41425', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sthonem', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/sthonem/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ASLAN:@/tmp/.ICE-unix/1869,unix/ASLAN:/tmp/.ICE-unix/1869', 'INVOCATION_ID': 'fddb7ce25cd44c669cf98409a08a4bec', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'tr_TR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/bfe983f3_e237_4eba_9003_2b7abf1f2027', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'tr_TR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'tr_TR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'tr_TR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'tr_TR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sthonem/erdem_ws/src/build/erdem', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sthonem/erdem_ws/src/build/erdem/prefix_override:/home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'tr_TR.UTF-8', 'LC_PAPER': 'tr_TR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[0.801860] (-) TimerEvent: {}
+[0.892543] (erdem) StdoutLine: {'line': b'running egg_info\n'}
+[0.892848] (erdem) StdoutLine: {'line': b'creating ../build/erdem/erdem.egg-info\n'}
+[0.893112] (erdem) StdoutLine: {'line': b'writing ../build/erdem/erdem.egg-info/PKG-INFO\n'}
+[0.893405] (erdem) StdoutLine: {'line': b'writing dependency_links to ../build/erdem/erdem.egg-info/dependency_links.txt\n'}
+[0.893583] (erdem) StdoutLine: {'line': b'writing entry points to ../build/erdem/erdem.egg-info/entry_points.txt\n'}
+[0.893639] (erdem) StdoutLine: {'line': b'writing requirements to ../build/erdem/erdem.egg-info/requires.txt\n'}
+[0.893688] (erdem) StdoutLine: {'line': b'writing top-level names to ../build/erdem/erdem.egg-info/top_level.txt\n'}
+[0.901981] (-) TimerEvent: {}
+[0.907385] (erdem) StdoutLine: {'line': b"writing manifest file '../build/erdem/erdem.egg-info/SOURCES.txt'\n"}
+[0.944971] (erdem) StdoutLine: {'line': b"reading manifest file '../build/erdem/erdem.egg-info/SOURCES.txt'\n"}
+[0.945457] (erdem) StdoutLine: {'line': b"writing manifest file '../build/erdem/erdem.egg-info/SOURCES.txt'\n"}
+[0.945564] (erdem) StdoutLine: {'line': b'running build\n'}
+[0.945621] (erdem) StdoutLine: {'line': b'running build_py\n'}
+[0.945674] (erdem) StdoutLine: {'line': b'creating /home/sthonem/erdem_ws/src/build/erdem/build\n'}
+[0.945725] (erdem) StdoutLine: {'line': b'creating /home/sthonem/erdem_ws/src/build/erdem/build/lib\n'}
+[0.945775] (erdem) StdoutLine: {'line': b'creating /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem\n'}
+[0.945907] (erdem) StdoutLine: {'line': b'copying erdem/subscriber_node.py -> /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem\n'}
+[0.945983] (erdem) StdoutLine: {'line': b'copying erdem/publisher_node.py -> /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem\n'}
+[0.946036] (erdem) StdoutLine: {'line': b'copying erdem/__init__.py -> /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem\n'}
+[0.946087] (erdem) StdoutLine: {'line': b'running install\n'}
+[0.946367] (erdem) StdoutLine: {'line': b'running install_lib\n'}
+[0.946915] (erdem) StdoutLine: {'line': b'creating /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem\n'}
+[0.947108] (erdem) StdoutLine: {'line': b'copying /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem/subscriber_node.py -> /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem\n'}
+[0.947260] (erdem) StdoutLine: {'line': b'copying /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem/publisher_node.py -> /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem\n'}
+[0.947336] (erdem) StdoutLine: {'line': b'copying /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem/__init__.py -> /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem\n'}
+[0.947461] (erdem) StdoutLine: {'line': b'byte-compiling /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem/subscriber_node.py to subscriber_node.cpython-38.pyc\n'}
+[0.948365] (erdem) StdoutLine: {'line': b'byte-compiling /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem/publisher_node.py to publisher_node.cpython-38.pyc\n'}
+[0.948588] (erdem) StdoutLine: {'line': b'byte-compiling /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem/__init__.py to __init__.cpython-38.pyc\n'}
+[0.948715] (erdem) StdoutLine: {'line': b'running install_data\n'}
+[0.949051] (erdem) StdoutLine: {'line': b'creating /home/sthonem/erdem_ws/src/install/erdem/share/ament_index\n'}
+[0.949287] (erdem) StdoutLine: {'line': b'creating /home/sthonem/erdem_ws/src/install/erdem/share/ament_index/resource_index\n'}
+[0.949449] (erdem) StdoutLine: {'line': b'creating /home/sthonem/erdem_ws/src/install/erdem/share/ament_index/resource_index/packages\n'}
+[0.949517] (erdem) StdoutLine: {'line': b'copying resource/erdem -> /home/sthonem/erdem_ws/src/install/erdem/share/ament_index/resource_index/packages\n'}
+[0.949565] (erdem) StdoutLine: {'line': b'copying package.xml -> /home/sthonem/erdem_ws/src/install/erdem/share/erdem\n'}
+[0.949610] (erdem) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.950577] (erdem) StdoutLine: {'line': b'Copying ../build/erdem/erdem.egg-info to /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem-0.0.0-py3.8.egg-info\n'}
+[0.951038] (erdem) StdoutLine: {'line': b'running install_scripts\n'}
+[0.962402] (erdem) StdoutLine: {'line': b"writing list of installed files to '/home/sthonem/erdem_ws/src/build/erdem/install.log'\n"}
+[0.973897] (erdem) CommandEnded: {'returncode': 0}
+[1.002119] (-) TimerEvent: {}
+[1.075873] (erdem) JobEnded: {'identifier': 'erdem', 'rc': 0}
+[1.076188] (-) EventReactorShutdown: {}

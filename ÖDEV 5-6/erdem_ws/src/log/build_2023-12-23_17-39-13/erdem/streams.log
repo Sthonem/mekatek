@@ -1,0 +1,39 @@
+[0.740s] Invoking command in '/home/sthonem/erdem_ws/src/erdem': PYTHONPATH=/home/sthonem/erdem_ws/src/build/erdem/prefix_override:/home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/erdem build --build-base /home/sthonem/erdem_ws/src/build/erdem/build install --record /home/sthonem/erdem_ws/src/build/erdem/install.log --install-scripts $base/lib/erdem --single-version-externally-managed
+[0.893s] running egg_info
+[0.893s] creating ../build/erdem/erdem.egg-info
+[0.893s] writing ../build/erdem/erdem.egg-info/PKG-INFO
+[0.893s] writing dependency_links to ../build/erdem/erdem.egg-info/dependency_links.txt
+[0.893s] writing entry points to ../build/erdem/erdem.egg-info/entry_points.txt
+[0.894s] writing requirements to ../build/erdem/erdem.egg-info/requires.txt
+[0.894s] writing top-level names to ../build/erdem/erdem.egg-info/top_level.txt
+[0.907s] writing manifest file '../build/erdem/erdem.egg-info/SOURCES.txt'
+[0.945s] reading manifest file '../build/erdem/erdem.egg-info/SOURCES.txt'
+[0.945s] writing manifest file '../build/erdem/erdem.egg-info/SOURCES.txt'
+[0.945s] running build
+[0.946s] running build_py
+[0.946s] creating /home/sthonem/erdem_ws/src/build/erdem/build
+[0.946s] creating /home/sthonem/erdem_ws/src/build/erdem/build/lib
+[0.946s] creating /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem
+[0.946s] copying erdem/subscriber_node.py -> /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem
+[0.946s] copying erdem/publisher_node.py -> /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem
+[0.946s] copying erdem/__init__.py -> /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem
+[0.946s] running install
+[0.946s] running install_lib
+[0.947s] creating /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem
+[0.947s] copying /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem/subscriber_node.py -> /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem
+[0.947s] copying /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem/publisher_node.py -> /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem
+[0.947s] copying /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem/__init__.py -> /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem
+[0.947s] byte-compiling /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem/subscriber_node.py to subscriber_node.cpython-38.pyc
+[0.948s] byte-compiling /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem/publisher_node.py to publisher_node.cpython-38.pyc
+[0.948s] byte-compiling /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem/__init__.py to __init__.cpython-38.pyc
+[0.949s] running install_data
+[0.949s] creating /home/sthonem/erdem_ws/src/install/erdem/share/ament_index
+[0.949s] creating /home/sthonem/erdem_ws/src/install/erdem/share/ament_index/resource_index
+[0.949s] creating /home/sthonem/erdem_ws/src/install/erdem/share/ament_index/resource_index/packages
+[0.949s] copying resource/erdem -> /home/sthonem/erdem_ws/src/install/erdem/share/ament_index/resource_index/packages
+[0.949s] copying package.xml -> /home/sthonem/erdem_ws/src/install/erdem/share/erdem
+[0.949s] running install_egg_info
+[0.950s] Copying ../build/erdem/erdem.egg-info to /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem-0.0.0-py3.8.egg-info
+[0.951s] running install_scripts
+[0.962s] writing list of installed files to '/home/sthonem/erdem_ws/src/build/erdem/install.log'
+[0.974s] Invoked command in '/home/sthonem/erdem_ws/src/erdem' returned '0': PYTHONPATH=/home/sthonem/erdem_ws/src/build/erdem/prefix_override:/home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/erdem build --build-base /home/sthonem/erdem_ws/src/build/erdem/build install --record /home/sthonem/erdem_ws/src/build/erdem/install.log --install-scripts $base/lib/erdem --single-version-externally-managed

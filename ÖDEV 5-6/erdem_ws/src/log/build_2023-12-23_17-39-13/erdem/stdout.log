@@ -1,0 +1,37 @@
+running egg_info
+creating ../build/erdem/erdem.egg-info
+writing ../build/erdem/erdem.egg-info/PKG-INFO
+writing dependency_links to ../build/erdem/erdem.egg-info/dependency_links.txt
+writing entry points to ../build/erdem/erdem.egg-info/entry_points.txt
+writing requirements to ../build/erdem/erdem.egg-info/requires.txt
+writing top-level names to ../build/erdem/erdem.egg-info/top_level.txt
+writing manifest file '../build/erdem/erdem.egg-info/SOURCES.txt'
+reading manifest file '../build/erdem/erdem.egg-info/SOURCES.txt'
+writing manifest file '../build/erdem/erdem.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sthonem/erdem_ws/src/build/erdem/build
+creating /home/sthonem/erdem_ws/src/build/erdem/build/lib
+creating /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem
+copying erdem/subscriber_node.py -> /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem
+copying erdem/publisher_node.py -> /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem
+copying erdem/__init__.py -> /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem
+running install
+running install_lib
+creating /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem
+copying /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem/subscriber_node.py -> /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem
+copying /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem/publisher_node.py -> /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem
+copying /home/sthonem/erdem_ws/src/build/erdem/build/lib/erdem/__init__.py -> /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem
+byte-compiling /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem/subscriber_node.py to subscriber_node.cpython-38.pyc
+byte-compiling /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem/publisher_node.py to publisher_node.cpython-38.pyc
+byte-compiling /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/sthonem/erdem_ws/src/install/erdem/share/ament_index
+creating /home/sthonem/erdem_ws/src/install/erdem/share/ament_index/resource_index
+creating /home/sthonem/erdem_ws/src/install/erdem/share/ament_index/resource_index/packages
+copying resource/erdem -> /home/sthonem/erdem_ws/src/install/erdem/share/ament_index/resource_index/packages
+copying package.xml -> /home/sthonem/erdem_ws/src/install/erdem/share/erdem
+running install_egg_info
+Copying ../build/erdem/erdem.egg-info to /home/sthonem/erdem_ws/src/install/erdem/lib/python3.8/site-packages/erdem-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/sthonem/erdem_ws/src/build/erdem/install.log'

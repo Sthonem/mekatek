@@ -1,0 +1,6 @@
+source;share/erdem/hook/pythonpath.ps1
+source;share/erdem/hook/pythonpath.dsv
+source;share/erdem/hook/pythonpath.sh
+source;share/erdem/hook/ament_prefix_path.ps1
+source;share/erdem/hook/ament_prefix_path.dsv
+source;share/erdem/hook/ament_prefix_path.sh
