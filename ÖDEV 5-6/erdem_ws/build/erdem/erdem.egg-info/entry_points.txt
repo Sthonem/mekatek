@@ -1,4 +1,0 @@
-[console_scripts]
-publisher_node = erdem.publisher_node:main
-subscriber_node = erdem.subscriber_node:main
-
